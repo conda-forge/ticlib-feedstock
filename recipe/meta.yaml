@@ -1,5 +1,5 @@
 {% set name = "ticlib" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ticlib-{{ version }}.tar.gz
-  sha256: 3ebdbee27629992d46d0fb0feb18dc51e790363b35b174c87de00ce5f6ed7419
+  sha256: 52a7d65a53eeb279f55797d97242122f2383a9e3e70c3a8bba7b2762812a0f02
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
